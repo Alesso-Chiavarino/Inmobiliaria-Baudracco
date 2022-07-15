@@ -1,0 +1,222 @@
+/* ----- INICIO ----- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 16px;
+    background: $colorBack;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    .arriba {
+        box-shadow: 1px 1px 1px solid #000;
+        display: flex;
+        justify-content: space-around;
+        background-color: $colorBack;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        .logo {
+            a {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                text-decoration: none;
+                .logo_name {
+                    color: #000;
+                    margin-left: -10.125em;
+                    .name {
+                        margin-top: 0.3125em;
+                        font-weight: bold;
+                        font-size: 1.125em;
+                        letter-spacing: 0.5px;
+                    }
+                    .job {
+                        font-size: 0.875em;
+                        letter-spacing: 0.5px;
+                    }
+                }
+            }
+            img {
+                vertical-align: top;
+                margin-left: 1.875em;
+                width: 15.625em;
+            }
+        }
+        #check {
+            display: none;
+        }
+    }
+    label {
+        display: none;
+        i {
+            color: #000;
+            font-size: 1.875em;
+            padding: 0.625em;
+            border-left: 1px solid rgba(0, 0, 0, 0.178);
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.menu {
+    padding-top: 2.3125em;
+    ul {
+        li {
+            display: inline-block;
+            padding: 1.25em;
+            list-style: none;
+            a {
+                color: black;
+                text-decoration: none;
+                font-size: 1.125em;
+                padding-bottom: 0.5em;
+                &:hover {
+                    border-bottom: 1.5px solid black;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+	width: 100%;
+	height: 43.75em;
+	animation: banner 15s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-attachment: fixed;
+}
+
+@keyframes banner {
+	0%, 20% {
+		background-image: url("../../imagenes/imagen1.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+
+	25%, 45% {
+        background-image: url("../../imagenes/imagen2.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+
+	50%, 70% {
+        background-image: url("../../imagenes/imagen3.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+
+	75%, 100% {
+        background-image: url("../../imagenes/imagen4.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+}
+
+.contenedorImagen {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+
+.contenedorTexto {
+    margin-top: 12.5em;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+    z-index: 0;
+    h1 {
+        color: #fff;
+	    font-size: 3.125em;
+	    margin-bottom: 1.25em;
+	    letter-spacing: 1px;
+    }
+    a {
+        color: #fff;
+	    text-decoration: none;
+	    background: rgba(255, 255, 255, .2);
+	    padding: 1em 2.3125em;
+	    display: inline-block;
+	    border-radius: 50px;
+        font-family: $primaryFont;
+        font-weight: bold;
+        &:hover {
+            background: rgba(255, 255, 255, .3);
+        }
+    }
+}
+
+.btn-mas {
+    margin-top: 2.5em;
+}
+
+.main_inicio {
+    .acerca {
+        width: 100%;
+        text-align: center;
+        max-width: 75em;
+        margin: auto;
+        h2 {
+            padding-top: 3.125rem;
+            @include title;
+        }
+        p {
+            color: #5a5a5a;
+            font-weight: 600;
+            font-size: 1em;
+            line-height: 1.875em;
+            width: 80%;
+            margin: 2.5em auto 3.75em auto;
+        }
+    }
+}
+
+/* ----- GRID ----- */
+
+header {
+    grid-area: header;
+}
+
+.main_inicio {
+    grid-area: acerca;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid_inicio {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "header"
+    "acerca"
+    "footer";
+}

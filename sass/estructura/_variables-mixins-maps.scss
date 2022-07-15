@@ -1,0 +1,44 @@
+// ----- VARIABLES ----- //
+
+$colorBack: rgb(255, 255, 255);
+$primaryFont: 'Lora', serif;
+
+// ----- MIXINS ----- //
+
+@mixin title {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+// ----- MAPS ----- //
+
+$paletaRedes: ('facebook': #1877f2, 'twitter': #1da1f2, 'instagram': #e1306c, 'whatsapp': #25d366);
+
+// ----- KEYFRAMES ----- //
+
+@keyframes banner {
+	0%, 20% {
+		background-image: url("../imagenes/imagen1.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+
+	25%, 45% {
+        background-image: url("../imagenes/imagen2.webp");
+        background-size: cover;
+        background-position: center;
+	}
+
+	50%, 70% {
+        background-image: url("../imagenes/imagen3.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+
+	75%, 100% {
+        background-image: url("../imagenes/imagen4.jpg");
+        background-size: cover;
+        background-position: center;
+	}
+}
