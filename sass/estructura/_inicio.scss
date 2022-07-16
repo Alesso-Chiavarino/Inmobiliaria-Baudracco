@@ -32,6 +32,7 @@ header {
         background-color: $colorBack;
         width: 100%;
         position: fixed;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2 );
         z-index: 1;
         .logo {
             a {
@@ -83,16 +84,29 @@ header {
     ul {
         li {
             display: inline-block;
-            padding: 1.25em;
+            margin: 1.25em;
             list-style: none;
+            position: relative;
+            &::after {
+                content: "";
+                height: 2px;
+                width: 0;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                bottom: -8.8px;
+                right: 50%;
+                transition: 0.3s all;
+            }
+            &:hover {
+                &::after {
+                    width: 100%;
+                    right: 0;
+                }
+            }
             a {
                 color: black;
                 text-decoration: none;
                 font-size: 1.125em;
-                padding-bottom: 0.5em;
-                &:hover {
-                    border-bottom: 1.5px solid black;
-                }
             }
         }
     }
@@ -219,4 +233,9 @@ footer {
     "header"
     "acerca"
     "footer";
+}
+
+.nashei {
+    padding-bottom: 7px;
+    border-bottom: 2px solid #000;
 }
