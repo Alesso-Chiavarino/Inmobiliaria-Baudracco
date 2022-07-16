@@ -14,3 +14,9 @@ const observador = new IntersectionObserver(cargarBorde, {
 });
 
 observador.observe(nosotros);
+
+
+// window.onload = function() {
+//     $('#onload').fadeOut();
+//     $('body').removeClass('hidden');
+// }

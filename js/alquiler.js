@@ -15,3 +15,10 @@ const observador = new IntersectionObserver(cargarBorde, {
 });
 
 observador.observe(alquiler);
+
+
+
+window.onload = function() {
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+}
