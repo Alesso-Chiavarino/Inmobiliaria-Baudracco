@@ -49,13 +49,12 @@
 
 /* ----- Medium devices (tablets, 768px and up) ----- */
 @media screen and (max-width: 768px) {
-
+    
+    // Inicio //
+    
     html {
         overflow-x: hidden;
     }
-
-
-    // Inicio //
     body {
         font-size: 12px;
     }
@@ -250,6 +249,9 @@
     // Contacto //
     .formulario {
         max-width: 300px;
+    }
+    .formulario__mensaje-exito {
+        width: 20em;
     }
 
     // Footer //

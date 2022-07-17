@@ -2,8 +2,6 @@ const enlace1 = document.getElementById('enlace1');
 const enlace2 = document.getElementById('enlace2');
 const index = document.getElementById('index');
 const lista = document.getElementById('liso');
-const uno = document.getElementById('uno');
-const dos = document.getElementById('dos');
 
 const cargarBorde = () => {
     console.log("ejecuta");

@@ -18,6 +18,8 @@ body {
     font-size: 16px;
     background: $colorBack;
 }
+
+//  -------------------------------- loader --------------------------------  //
 .hidden {
     overflow: hidden;
 }
@@ -27,9 +29,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-// OJOO ---------------------------
-
 @keyframes ldio-6k96ilatv2t {
   0% { transform: rotate(0) }
   100% { transform: rotate(360deg) }
@@ -128,6 +127,7 @@ body {
     width: 100%;
     margin: auto;
 }
+//  -------------------------------- loader --------------------------------  //
 
 header {
     .arriba {
