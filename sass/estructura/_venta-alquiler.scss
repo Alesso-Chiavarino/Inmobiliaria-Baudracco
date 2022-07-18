@@ -201,5 +201,213 @@
 
 
 
+.container_carousel {
+    // width: 800px;
+    // margin: auto;
+    // position: relative;
+    // width: 50%;
+    // width: 780px;
+    width: 70%;
+    // height: 440px;
+    // box-shadow: 0 0 6px 0 rgb(0 0 0 / 40%);
+    // animation-name: modal;
+    // animation-duration: 1s;
+    // // top: 500px;
+    // left: 250px;
+	// display: flex;
+	// margin-top: 50px;
+}
+
+.swiper {
+	width: 100%;
+}
+
+.cont_ventana_arriba {
+    background-color: #000;
+    display: flex;
+}
+
+.info_casa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+    // padding: 20px;
+    background-color: #fff;
+    .cruz {
+        width: 100%;
+        text-align: right;
+        padding: 0.625em 0.625em 0 0;
+        font-size: 1.375em;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.767);
+        &:hover {
+            color: #000;
+        }
+    }
+    h2 {
+        font-family: $primaryFont;
+        color: #223c54;
+        font-size: 2.1875em;
+        letter-spacing: 1px;
+        // line-height: 45px;
+        margin: 0 0 0.5em;
+        text-align: left;
+        padding: 1.25rem 0 0 1.875rem ;
+        font-weight: 400;
+    }
+    .desc_icono2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1.25em;
+        justify-content: center;
+        align-items: center;
+        .dorm, .baño, .metro2, .pileta {
+            width: 40%;
+            color: #60707f;
+            i {
+                font-size: 1.875em;
+                color: #4e4e4e;
+            }
+            span {
+                font-size: 1.125em;
+                margin-left: 0.3125em;
+            }
+        }
+        .metro2, .pileta {
+            margin-top: 1.25em;
+        }
+    }
+    h3 {
+        font-family: 'Lora';
+        font-weight: 500;
+        font-size: 1.375em;
+        letter-spacing: 1px;
+        padding: 30px 0 0 30px;
+    }   
+    p {
+        padding: 1.875em;
+        line-height: 1.6875em;
+    }
+    .btn_info {
+        text-align: center;
+        // display: inline;
+        width: 88%;
+        // padding: 0 30px;
+        margin-left: 1.875em;
+        // margin: auto !important;
+        // margin-left: 80px;
+        padding: 0.9375em 1.25em;
+        color: #fff;
+        border: none !important;
+        outline: none;
+        cursor: pointer;
+        background-color: #CF505A;
+        letter-spacing: 1px;
+        &:hover {
+            background-color: #c33641;
+        }
+    }
+}
+
+.image__wrapper {
+    width: 100%;
+	position: relative;
+	padding-top: 56.25%;
+}
+
+.image__wrapper img {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center top;
+	vertical-align: top;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: rgb(255, 255, 255);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: rgba(252, 252, 252, 0.582);
+	&:hover {
+		color: #fff;
+	} 
+}
+
+.swiper-button-prev:hover {
+	color: #fff;
+}
+.swiper-button-next:hover {
+	color: #fff;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	font-size: 2rem;
+}
+
+
+// ----------------------------------------------------------------
+
+.contModal{
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index:1;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+}
+.ventana_modal{
+    // transition: all 1s ease-in-out;
+	// position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	width: 80%;
+    height: 50em;
+    background-color: #fff;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+    animation-name: modal;
+    animation-duration: 0.4s;
+}
+@keyframes modal{
+	from{top:-330px; opacity:0;}
+	to{top:0; opacity:1;}
+}
+.close{
+	color: #f2f2f2;
+	font-size:1.875em;
+	font-weight: bold;
+}
+.close:hover{
+	color:#7f8c8d;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+// p{
+// 	text-align: justify;
+// }
+
+
+
+
 
 
