@@ -1,5 +1,6 @@
 const enlace3 = document.getElementById('enlace3');
 const alquiler = document.getElementById('alquiler');
+let bodyy = document.getElementById('bodyy');
 
 const cargarBorde = () => {
     console.log("ejecuta")
@@ -17,11 +18,19 @@ const observador = new IntersectionObserver(cargarBorde, {
 observador.observe(alquiler);
 
 
+// loader
+
+bodyy.style.backgroundColor = '#000'
+bodyy.style.opacity = '0.7'
 
 window.onload = function() {
+	bodyy.style.opacity = '1'
+	bodyy.style.backgroundColor = '#fff'
     $('#onload').fadeOut();
-    $('body').removeClass('hidden');
 }
+
+
+
 
 
 // carousel
@@ -59,7 +68,7 @@ let modal = document.getElementById('miModal');
 let contModal = document.getElementById('contModal');
 let abrir = document.getElementById('casa1');
 let cerrar = document.getElementById('cruz');
-let bodyy = document.getElementById('bodyy');
+
 
 abrir.addEventListener('click', function(){
     modal.style.display = 'block';

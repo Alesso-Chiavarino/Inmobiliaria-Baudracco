@@ -18,7 +18,13 @@ observador.observe(contacto);
 
 
 
+// loader
+
+bodyy.style.backgroundColor = '#000'
+bodyy.style.opacity = '0.7'
+
 window.onload = function() {
+	bodyy.style.opacity = '1'
+	bodyy.style.backgroundColor = '#fff'
     $('#onload').fadeOut();
-    $('body').removeClass('hidden');
 }
