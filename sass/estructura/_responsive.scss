@@ -16,23 +16,7 @@
     }
     .info_casa {
         .cont_cruz {
-            position: absolute;
-            text-align: right;
-            top: -500px;
-            right: 0;
-            z-index: 700 !important;
-            background-color: #000;
-            .cruz {
-                margin: 0.625em 0.625em 0 0;
-                font-size: 1.375em;
-                cursor: pointer;
-                color: rgba(0, 0, 0, 0.767);
-                &:hover {
-                    color: #000;
-                    animation: rotateIn;
-                    animation-duration: 0.5s;
-                }
-            }
+            top: -440px;
         }
     }
 
@@ -64,6 +48,11 @@
     .info_casa {
         .btn_info {
             width: 60%;
+        }
+    }
+    .info_casa {
+        .cont_cruz {
+            top: -345px;
         }
     }
 
@@ -189,6 +178,9 @@
         }
     }
     .info_casa {
+        .cont_cruz {
+            top: -300px;
+        }
         .desc_icono2 {
             .dorm,.baño,.metro2,.pileta {
                 // width: 50%;
@@ -287,6 +279,9 @@
         }
     }
     .info_casa {
+        .cont_cruz {
+            top: -250px;
+        }
         .desc_icono2 {
             justify-content: space-evenly;
             .dorm,.baño,.metro2,.pileta {
