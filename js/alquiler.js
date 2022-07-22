@@ -24,9 +24,9 @@ bodyy.style.backgroundColor = '#000'
 bodyy.style.opacity = '0.4'
 
 window.onload = function() {
-	bodyy.style.opacity = '1'
+	$('#onload').fadeOut();
 	bodyy.style.backgroundColor = '#fff'
-    $('#onload').fadeOut();
+	bodyy.style.opacity = '1'
 }
 
 
@@ -68,17 +68,19 @@ let modal = document.getElementById('miModal');
 let contModal = document.getElementById('contModal');
 let abrir = document.getElementById('casa1');
 let cerrar = document.getElementById('cruz');
+let htmll = document.getElementById('htmll');
 
 
 abrir.addEventListener('click', function(){
     modal.style.display = 'block';
     bodyy.style.overflow = 'hidden';
-    
+	htmll.style.overflow = 'hidden';
 });
 
 cerrar.addEventListener('click', function(){
         modal.style.display = 'none';
 		bodyy.style.overflow = 'visible';
+		htmll.style.overflow = 'visible';
     });
     
     window.addEventListener('click', function(e){
@@ -86,6 +88,7 @@ cerrar.addEventListener('click', function(){
         if(e.target == contModal){
             modal.style.display = 'none';
             bodyy.style.overflow = 'visible';
+			htmll.style.overflow = 'visible';
     }
 });
 
