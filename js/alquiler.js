@@ -21,7 +21,7 @@ observador.observe(alquiler);
 // loader
 
 bodyy.style.backgroundColor = '#000'
-bodyy.style.opacity = '0.7'
+bodyy.style.opacity = '0.4'
 
 window.onload = function() {
 	bodyy.style.opacity = '1'
